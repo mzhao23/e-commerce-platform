@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}{{ product.name }}{% endblock %}
+{% block content %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+            <li class="breadcrumb-item"><a href="{{ url_for('products') }}">Products</a></li>
+            <li class="breadcrumb-item active">{{ product.name[:30] }}...</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-5">
+            <div class="bg-light p-4 rounded text-center">
+                <img src="{{ url_for('static', filename='images/' ~ (product.image or 'default.jpg')) }}"
+                     class="img-fluid rounded" alt="{{ product.name }}"
+                     style="width: 100%; height: auto; max-height: 450px; object-fit: contain;">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <h2>{{ product.name }}</h2>
+            <p class="text-primary display-5 fw-bold">${{ "%.2f"|format(product.price) }}</p>
+            <p class="text-muted">{{ product.desc }}</p>
+
+            <div class="d-flex align-items-center mb-3">
+            <span class="text-warning me-2">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </span>
+                <span class="text-muted">(128 reviews)</span>
+            </div>
+
+            <p><span class="badge bg-success">In Stock</span></p>
+
+            <form action="{{ url_for('add_to_cart', product_id=product.id) }}" method="POST" class="mt-4">
+                <button type="submit" class="btn btn-success btn-lg">
+                    <i class="bi bi-cart-plus"></i> Add to Cart
+                </button>
+                <a href="{{ url_for('products') }}" class="btn btn-outline-secondary btn-lg ms-2">
+                    Continue Shopping
+                </a>
+            </form>
+        </div>
+    </div>
+
+    {% if related %}
+        <hr class="my-5">
+        <h4><i class="bi bi-collection"></i> Related Products</h4>
+        <div class="row">
+            {% for p in related %}
+                <div class="col-md-3 mb-3">
+                    <div class="card product-card">
+                        <img src="{{ url_for('static', filename='images/' ~ (product.image or 'default.jpg')) }}"
+                             class="card-img-top" alt="{{ product.name }}" style="height: 180px; object-fit: cover;">
+                        <div class="card-body">
+                            <h6>{{ p.name[:20] }}...</h6>
+                            <p class="text-primary">${{ "%.2f"|format(p.price) }}</p>
+                            <a href="{{ url_for('product_detail', product_id=p.id) }}"
+                               class="btn btn-sm btn-outline-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,186 @@
+[
+  {
+    "SessionId": "sess_20251214_292407e6",
+    "CustomerId": 14,
+    "Timestamp": "2025-12-14T15:55:28Z",
+    "Events": [
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-14T15:55:28Z",
+        "ProductId": 5,
+        "Duration": 30
+      },
+      {
+        "EventType": "AddToCart",
+        "Timestamp": "2025-12-14T15:55:31Z",
+        "ProductId": 5
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-14T15:55:31Z",
+        "ProductId": 5,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-14T15:55:34Z",
+        "ProductId": 2,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-14T15:55:37Z",
+        "ProductId": 7,
+        "Duration": 30
+      }
+    ]
+  },
+  {
+    "SessionId": "sess_20251218_3abe6722",
+    "CustomerId": 14,
+    "Timestamp": "2025-12-18T13:34:02Z",
+    "Events": [
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:34:02Z",
+        "ProductId": 11,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:34:11Z",
+        "ProductId": 9,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:34:13Z",
+        "ProductId": 11,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:34:17Z",
+        "ProductId": 9,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:37:57Z",
+        "ProductId": 2,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:38:02Z",
+        "ProductId": 2,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:38:02Z",
+        "ProductId": 2,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:38:31Z",
+        "ProductId": 2,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:38:32Z",
+        "ProductId": 2,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:39:42Z",
+        "ProductId": 2,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:39:51Z",
+        "ProductId": 1,
+        "Duration": 30
+      }
+    ]
+  },
+  {
+    "SessionId": "sess_20251218_073331bc",
+    "CustomerId": 14,
+    "Timestamp": "2025-12-18T13:40:13Z",
+    "Events": [
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:40:13Z",
+        "ProductId": 1,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:40:13Z",
+        "ProductId": 1,
+        "Duration": 30
+      }
+    ]
+  },
+  {
+    "SessionId": "sess_20251218_027bdbba",
+    "CustomerId": 14,
+    "Timestamp": "2025-12-18T13:40:56Z",
+    "Events": [
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:40:56Z",
+        "ProductId": 1,
+        "Duration": 30
+      }
+    ]
+  },
+  {
+    "SessionId": "sess_20251218_3504c95c",
+    "CustomerId": 14,
+    "Timestamp": "2025-12-18T13:43:45Z",
+    "Events": [
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:43:45Z",
+        "ProductId": 1,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:43:52Z",
+        "ProductId": 5,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:43:55Z",
+        "ProductId": 6,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:44:10Z",
+        "ProductId": 3,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:44:51Z",
+        "ProductId": 6,
+        "Duration": 30
+      },
+      {
+        "EventType": "View",
+        "Timestamp": "2025-12-18T13:45:00Z",
+        "ProductId": 19,
+        "Duration": 30
+      }
+    ]
+  }
+]
